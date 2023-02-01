@@ -44,38 +44,6 @@ public class Main {
 
                     game.addPiece(Integer.valueOf(input), 1);
                 }
-                
-                /* 
-                while(!notALetter(input) || Integer.parseInt(input) < 1 || Integer.parseInt(input) > 7){
-                    
-                    System.out.println("\nThat is invalid.");
-                    if(playerTurn == 0){
-                        System.out.println("Which column would you like to drop your piece player red🔴?");
-                        input = read.nextLine();
-                        game.addPiece(Integer.valueOf(input), 0);
-                    }
-                    else{
-                        System.out.println("Which column would you like to drop your piece player blue🔵?");
-                        input = read.nextLine();
-                        game.addPiece(Integer.valueOf(input), 1);
-                    }
-                    // checking specifically
-                    int intInput = Integer.parseInt(input);
-                    while(!game.columnEmpty(intInput)){
-                        if(playerTurn == 0){
-                            System.out.println("Which column would you like to drop your piece player red🔴?");
-                            input = read.nextLine();
-                            game.addPiece(Integer.valueOf(input), 0);
-                        }
-                        else{
-                            System.out.println("Which column would you like to drop your piece player blue🔵?");
-                            input = read.nextLine();
-                            game.addPiece(Integer.valueOf(input), 1);
-                        }
-                    }
-                }
-                */
-            
 
                 //int intInput = Integer.parseInt(input);
                 game.printBoard();
@@ -100,18 +68,6 @@ public class Main {
         }
 
     }
-
-    /* 
-    public static boolean notALetter(String input){
-        try{
-            int temp = Integer.parseInt(input);
-            return true;
-        }
-        catch(Exception e){
-            return false;
-        }
-    }
-    */
 
     public static boolean validInput(String input){
         int temp = 0;
