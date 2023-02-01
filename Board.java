@@ -4,24 +4,8 @@ public class Board{
     // stores the Row/Column location of the last piece placed (for purposes of checking if the player won)
     int prevC;
     int prevR;
-    // clears the board
-    public static void main(String[] args){
-        Board game = new Board();
-        game.addPiece(1, 1);
-        game.addPiece(2, 0);
-        game.addPiece(3, 0);
-        game.addPiece(4, 0);
-        game.addPiece(3, 0);
-        game.addPiece(4, 0);
-        game.addPiece(2, 1);
-        game.addPiece(3, 1);
-        game.addPiece(4, 0);
-//        game.addPiece(4, 1);
-        
-        game.printBoard();
-        game.gameOver();
-    }
-
+    
+    
     // makes the board empty
     public Board(){
         for (int i = 0; i < 6; i++){
